@@ -4,6 +4,7 @@ $.get('https://jsonplaceholder.typicode.com/todos').done(function(data){
                     for(let i in element){
                         $("tbody").append(`<td>${element[i]}</td>`)
                     }
+                    $("tbody").append(`</tr>`);
                     // console.log(data);
                 });
 });
